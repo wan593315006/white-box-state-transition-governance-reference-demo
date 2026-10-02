@@ -1,0 +1,7 @@
+# Keep public source and release records byte-stable across Windows and Unix checkouts.
+* text=auto eol=lf
+
+# Release binaries must never be line-ending transformed.
+*.png binary
+*.pdf binary
+*.docx binary
