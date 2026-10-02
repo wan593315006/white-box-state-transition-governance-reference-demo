@@ -1,0 +1,6 @@
+{
+  "state_snapshot": {"object_id": "case-001", "version": 4, "state": "draft"},
+  "policy_snapshot": {"policy_id": "review-transition", "version": "1.0.0", "allowed_targets": ["reviewed"], "authorized_principals": ["agent-demo"]},
+  "candidate_transition": {"candidate_id": "candidate-001", "object_id": "case-001", "base_state_version": 4, "base_state_fingerprint": "9691b83d35354ca4aeb6e09b115fd52b85dc09f06d88691af0c373d40f169d60", "target_state": "reviewed", "principal_id": "agent-demo", "idempotency_key": "case-001-v4"},
+  "evidence": {"evidence_id": "ev-001", "object_id": "case-001", "state_version": 4, "content_hash": "demo-evidence-sha256", "status": "VALID"}
+}
