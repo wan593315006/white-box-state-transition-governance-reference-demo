@@ -1,0 +1,19 @@
+test_ablation_without_evidence_context_binding_accepts_wrong_evidence (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_ablation_without_evidence_context_binding_accepts_wrong_evidence) ... ok
+test_ablation_without_observation_binding_advances_after_failure (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_ablation_without_observation_binding_advances_after_failure) ... ok
+test_ablation_without_replay_binding_cannot_check_history (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_ablation_without_replay_binding_cannot_check_history) ... ok
+test_ablation_without_state_version_binding_accepts_stale_transition (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_ablation_without_state_version_binding_accepts_stale_transition) ... ok
+test_allow_applied_emits_complete_inspectable_lineage (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_allow_applied_emits_complete_inspectable_lineage) ... ok
+test_allow_does_not_claim_success_when_observation_fails_or_unknown (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_allow_does_not_claim_success_when_observation_fails_or_unknown) ... ok
+test_direct_tool_request_is_blocked_and_audited (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_direct_tool_request_is_blocked_and_audited) ... ok
+test_evidence_binding_mismatch_denies (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_evidence_binding_mismatch_denies) ... ok
+test_high_risk_escalates_without_effect (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_high_risk_escalates_without_effect) ... ok
+test_invalid_principal_denies_without_effect (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_invalid_principal_denies_without_effect) ... ok
+test_missing_or_refreshable_evidence_defers_without_effect (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_missing_or_refreshable_evidence_defers_without_effect) ... ok
+test_policy_snapshot_change_invalidates_replay (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_policy_snapshot_change_invalidates_replay) ... ok
+test_replay_verifies_original_lineage_without_second_effect (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_replay_verifies_original_lineage_without_second_effect) ... ok
+test_tampered_record_fails_replay_verification (test_whitebox_demo.WhiteBoxStateTransitionGovernanceTests.test_tampered_record_fails_replay_verification) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.006s
+
+OK

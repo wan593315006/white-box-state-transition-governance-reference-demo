@@ -1,0 +1,27 @@
+{
+  "schema": "white-box-state-transition-governance.reproduction-environment.v1",
+  "release_version": "0.2.2",
+  "source_layout": "src",
+  "runtime_dependencies": "Python standard library only",
+  "verified_interpreters": [
+    {
+      "family": "CPython",
+      "version": "3.9",
+      "test_receipt": "results/test_python39_v0.2.2.txt"
+    },
+    {
+      "family": "CPython",
+      "version": "3.13",
+      "test_receipt": "results/test_python313_v0.2.2.txt"
+    }
+  ],
+  "environment_identity_exclusions": [
+    "hardware identifiers",
+    "MAC addresses",
+    "IP addresses",
+    "user secrets",
+    "production credentials"
+  ],
+  "network_required": false,
+  "external_side_effects": false
+}

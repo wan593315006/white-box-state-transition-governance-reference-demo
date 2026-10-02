@@ -1,0 +1,576 @@
+{
+  "case_count": 7,
+  "protocol": "WBSTG-FIXED-CASES-1",
+  "results": [
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "750b1580aa78b5b39e6758c10e7a8702983589a414782362ee2446e213809f6a",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C1",
+            "idempotency_key": "C1",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "LOW",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": true,
+          "external_side_effects": false,
+          "invoked": true
+        },
+        "decision": "ALLOW",
+        "evidence": {
+          "fingerprint": "16676e0be3f23617c32bb63c03443f41f13e489f5324335c02f67f669c810b69",
+          "value": {
+            "content_hash": "fixed-demo-evidence-content-hash",
+            "evidence_id": "evidence-1",
+            "object_id": "object-1",
+            "refreshable": false,
+            "state_version": 7,
+            "status": "VALID"
+          }
+        },
+        "observation": "APPLIED",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "CANDIDATE_TRANSITION_QUALIFIED",
+        "record_fingerprint": "1a1e6d9c3b0ce6dbfdc393dfe096d9f104d2acb252ddc23fdd95d83bf1d913f7",
+        "record_id": "lin-4be60c816bfaa96e",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "0873c49e38f4ecc76e39ae55465a954fbc39816b6cb8415f92ee3831733fd4c7",
+          "value": {
+            "object_id": "object-1",
+            "state": "reviewed",
+            "version": 8
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C1",
+      "expected": {
+        "decision": "ALLOW",
+        "observation": "APPLIED"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "reviewed",
+        "version": 8
+      },
+      "simulated_effect_count": 1
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "2f51bb85451cab031cfd3883b424e3bc7571e5d393e29551d018e138652cc72d",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C2",
+            "idempotency_key": "C2",
+            "object_id": "object-1",
+            "principal_id": "untrusted",
+            "risk": "LOW",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": false,
+          "external_side_effects": false,
+          "invoked": false
+        },
+        "decision": "DENY",
+        "evidence": {
+          "fingerprint": "16676e0be3f23617c32bb63c03443f41f13e489f5324335c02f67f669c810b69",
+          "value": {
+            "content_hash": "fixed-demo-evidence-content-hash",
+            "evidence_id": "evidence-1",
+            "object_id": "object-1",
+            "refreshable": false,
+            "state_version": 7,
+            "status": "VALID"
+          }
+        },
+        "observation": "NOT_RUN",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "PRINCIPAL_NOT_AUTHORIZED_BY_POLICY",
+        "record_fingerprint": "cd841293205693cea68ad12f3672ef31d3f588a0441e15b3d6d5965efb6e336c",
+        "record_id": "lin-b532766fd6f34831",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C2",
+      "expected": {
+        "decision": "DENY",
+        "observation": "NOT_RUN"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "draft",
+        "version": 7
+      },
+      "simulated_effect_count": 0
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "b5c6c1b349de62c3586ad451bc1d8d1dade3ca168daf0c569e1cec2d51ae962c",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C3",
+            "idempotency_key": "C3",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "LOW",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": false,
+          "external_side_effects": false,
+          "invoked": false
+        },
+        "decision": "DEFER",
+        "evidence": null,
+        "observation": "NOT_RUN",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "EVIDENCE_MISSING",
+        "record_fingerprint": "d607ed91caa8032b3cc6ea48f25e722191ed51555d2ba09c4fd46b15f865d56f",
+        "record_id": "lin-10833240529cc561",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C3",
+      "expected": {
+        "decision": "DEFER",
+        "observation": "NOT_RUN"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "draft",
+        "version": 7
+      },
+      "simulated_effect_count": 0
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "bb0cc68a17409215bd4f4cf0e3c241a6461a88c90e489a958fefab11f9d1752f",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C4",
+            "idempotency_key": "C4",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "HIGH",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": false,
+          "external_side_effects": false,
+          "invoked": false
+        },
+        "decision": "ESCALATE",
+        "evidence": {
+          "fingerprint": "16676e0be3f23617c32bb63c03443f41f13e489f5324335c02f67f669c810b69",
+          "value": {
+            "content_hash": "fixed-demo-evidence-content-hash",
+            "evidence_id": "evidence-1",
+            "object_id": "object-1",
+            "refreshable": false,
+            "state_version": 7,
+            "status": "VALID"
+          }
+        },
+        "observation": "NOT_RUN",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "HIGH_RISK_REQUIRES_HUMAN_REVIEW",
+        "record_fingerprint": "7a9856c03dee370215a2c814ff5c3333df121dd9d34244669bb3d58e424be35c",
+        "record_id": "lin-bb8eef861121c541",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C4",
+      "expected": {
+        "decision": "ESCALATE",
+        "observation": "NOT_RUN"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "draft",
+        "version": 7
+      },
+      "simulated_effect_count": 0
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "eee14e85639265acfc1da9db2a9a772de5d1545ff1b446bc56d88678a22d837e",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C5",
+            "idempotency_key": "C5",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "LOW",
+            "simulated_executor_outcome": "FAILED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": true,
+          "external_side_effects": false,
+          "invoked": true
+        },
+        "decision": "ALLOW",
+        "evidence": {
+          "fingerprint": "16676e0be3f23617c32bb63c03443f41f13e489f5324335c02f67f669c810b69",
+          "value": {
+            "content_hash": "fixed-demo-evidence-content-hash",
+            "evidence_id": "evidence-1",
+            "object_id": "object-1",
+            "refreshable": false,
+            "state_version": 7,
+            "status": "VALID"
+          }
+        },
+        "observation": "FAILED",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "CANDIDATE_TRANSITION_QUALIFIED",
+        "record_fingerprint": "0a15112abe0cdfef976a6d6bacad3bd80aa8aa7674cd4a82fd8b85775bf3f98c",
+        "record_id": "lin-9cf47a46db1cc30b",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C5",
+      "expected": {
+        "decision": "ALLOW",
+        "observation": "FAILED"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "draft",
+        "version": 7
+      },
+      "simulated_effect_count": 0
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "9d1af3dd938bf68ad1b710ea70db905935e3408035953adbfe9e988c51d0d073",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "C6",
+            "idempotency_key": "C6",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "LOW",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "reviewed"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": true,
+          "external_side_effects": false,
+          "invoked": true
+        },
+        "decision": "ALLOW",
+        "evidence": {
+          "fingerprint": "16676e0be3f23617c32bb63c03443f41f13e489f5324335c02f67f669c810b69",
+          "value": {
+            "content_hash": "fixed-demo-evidence-content-hash",
+            "evidence_id": "evidence-1",
+            "object_id": "object-1",
+            "refreshable": false,
+            "state_version": 7,
+            "status": "VALID"
+          }
+        },
+        "observation": "APPLIED",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "CANDIDATE_TRANSITION_QUALIFIED",
+        "record_fingerprint": "0dee523ccf79d4d43b735d978b5f485058557f7ebc84fcd925e137b94c471819",
+        "record_id": "lin-abff7582cbd13dfa",
+        "replayed": true,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "0873c49e38f4ecc76e39ae55465a954fbc39816b6cb8415f92ee3831733fd4c7",
+          "value": {
+            "object_id": "object-1",
+            "state": "reviewed",
+            "version": 8
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "C6",
+      "expected": {
+        "decision": "ALLOW",
+        "observation": "APPLIED"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "reviewed",
+        "version": 8
+      },
+      "replay_verification": {
+        "reason": "REPLAY_VERIFIED_WITHOUT_EXECUTION",
+        "verified": true
+      },
+      "simulated_effect_count": 1
+    },
+    {
+      "actual": {
+        "candidate": {
+          "fingerprint": "96daae7836d2f5cb6096fa74b739048a8b69d0077d1852dbb22da975296c8528",
+          "value": {
+            "base_state_fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+            "base_state_version": 7,
+            "candidate_id": "bypass:agent-1",
+            "idempotency_key": "bypass:5a29992c1df0e6b831b3b20c56e4dc84d1a2ff1b2a81dcfc3d3871aab27d0b54",
+            "object_id": "object-1",
+            "principal_id": "agent-1",
+            "risk": "LOW",
+            "simulated_executor_outcome": "APPLIED",
+            "target_state": "NONE"
+          }
+        },
+        "controlled_execution": {
+          "adapter": "IN_MEMORY_CONTROLLED_EXECUTOR",
+          "execution_authorized": false,
+          "external_side_effects": false,
+          "invoked": false
+        },
+        "decision": "DENY",
+        "evidence": null,
+        "observation": "NOT_RUN",
+        "policy": {
+          "fingerprint": "19749788e1eb6ca150e9554ac62488c73c005af832e5da6ffaf4748561608cee",
+          "value": {
+            "allowed_targets": [
+              "reviewed"
+            ],
+            "authorized_principals": [
+              "agent-1"
+            ],
+            "policy_id": "review-policy",
+            "require_escalation_for_high_risk": true,
+            "version": "1.0.0"
+          }
+        },
+        "reason_code": "DIRECT_TOOL_ACCESS_NOT_EXPOSED",
+        "record_fingerprint": "5f8c6304914f4beaa4ad2060666fbd315de46e57661cec6640f653e3c4725c44",
+        "record_id": "lin-a388d6c268f69903",
+        "replayed": false,
+        "schema_version": "WBSTG-LINEAGE-1",
+        "state_after": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        },
+        "state_before": {
+          "fingerprint": "3c0af036e19ba52ac50a9b1f8a0a37dc7ff63128ee988e8e4fec62019f51c7ed",
+          "value": {
+            "object_id": "object-1",
+            "state": "draft",
+            "version": 7
+          }
+        }
+      },
+      "case_id": "I1",
+      "expected": {
+        "decision": "DENY",
+        "observation": "NOT_RUN"
+      },
+      "post_state": {
+        "object_id": "object-1",
+        "state": "draft",
+        "version": 7
+      },
+      "simulated_effect_count": 0
+    }
+  ],
+  "summary": {
+    "expected_decision_agreement": "7/7",
+    "expected_observation_agreement": "7/7",
+    "replay_verification": "1/1"
+  }
+}

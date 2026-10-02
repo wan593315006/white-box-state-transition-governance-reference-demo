@@ -1,0 +1,27 @@
+{
+  "experiment": "semantic_ablation_v1",
+  "external_side_effects": false,
+  "outcome_count": 4,
+  "outcomes": [
+    {
+      "property_name": "evidence_context_binding",
+      "reduced_baseline_behavior": "ACCEPTED_WITHOUT_OBJECT_OR_VERSION_CHECK",
+      "reference_property": "wrong-object or wrong-version evidence is rejected"
+    },
+    {
+      "property_name": "state_version_binding",
+      "reduced_baseline_behavior": "ACCEPTED_WITHOUT_CURRENT_STATE_VERSION_CHECK",
+      "reference_property": "stale candidate state version is escalated rather than executed"
+    },
+    {
+      "property_name": "observation_aware_advancement",
+      "reduced_baseline_behavior": "STATE_ADVANCED_WITHOUT_CHECKING_FAILED",
+      "reference_property": "only APPLIED advances simulated state"
+    },
+    {
+      "property_name": "replay_binding",
+      "reduced_baseline_behavior": "HISTORICAL_REPLAY_NOT_CHECKABLE_WITHOUT_BOUND_LINEAGE",
+      "reference_property": "candidate, state, evidence, policy, and record integrity are verified"
+    }
+  ]
+}
