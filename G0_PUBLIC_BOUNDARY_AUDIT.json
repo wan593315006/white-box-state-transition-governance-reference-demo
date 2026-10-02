@@ -1,0 +1,43 @@
+{
+  "audit_id": "G0_PUBLIC_BOUNDARY_AUDIT_V1",
+  "checks": [
+    {
+      "check": "no_network_or_external_process_import_in_public_code",
+      "evidence": [],
+      "status": "PASS"
+    },
+    {
+      "check": "no_secret_named_payload",
+      "evidence": [],
+      "status": "PASS"
+    },
+    {
+      "check": "no_machine_absolute_path_in_public_text_or_code",
+      "evidence": [],
+      "status": "PASS"
+    },
+    {
+      "check": "public_boundary_document_present",
+      "evidence": "PUBLICATION_BOUNDARY.md",
+      "status": "PASS"
+    }
+  ],
+  "limitations": [
+    "Static audit only; it does not certify production security.",
+    "No protected engineering implementation is evaluated by this audit."
+  ],
+  "release_version": "0.2.2",
+  "result": "PASS",
+  "scanned_python_files": [
+    "src/wbstg/__init__.py",
+    "src/wbstg/ablation.py",
+    "src/wbstg/cli.py",
+    "src/wbstg/kernel.py",
+    "src/wbstg/models.py",
+    "tools/build_release_evidence.py",
+    "tools/prepare_public_paper.py",
+    "tools/run_reference_cases.py",
+    "tools/run_semantic_ablation.py"
+  ],
+  "scope": "public source, tools, declared metadata, and release payload"
+}

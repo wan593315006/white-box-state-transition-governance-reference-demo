@@ -1,0 +1,191 @@
+{
+  "excluded_payload": [
+    "protected engineering code",
+    "credentials",
+    "network clients",
+    "real executors",
+    "production configuration"
+  ],
+  "file_count": 34,
+  "files": [
+    {
+      "bytes": 206,
+      "path": ".gitattributes",
+      "sha256": "5a9333f59f2805e8741e060c54ff23780ef04c6bbb8b40e1c04404cc84659605"
+    },
+    {
+      "bytes": 104,
+      "path": ".gitignore",
+      "sha256": "e5c4be797dd3056f8b18eb0fe82439038a3cf219645c59bf434045728cf6f039"
+    },
+    {
+      "bytes": 683,
+      "path": "ARCHITECTURE.md",
+      "sha256": "554c963010a467e974036a19811e3eac7f6122b177a25539da1720318d44e11d"
+    },
+    {
+      "bytes": 893,
+      "path": "CITATION.cff",
+      "sha256": "c7e16a98b54d4883b982ad0abe05703a76be1d0059a15e347f84b27936a16bb7"
+    },
+    {
+      "bytes": 675,
+      "path": "examples/valid_transition.json",
+      "sha256": "24cd879e7304be4bae43c71187ec9493ce2519a48430c105d0367e6aae211db9"
+    },
+    {
+      "bytes": 2630,
+      "path": "EXPERIMENT_PROTOCOL.md",
+      "sha256": "801ef9f3832ea9a0abe379b8349e83ce5dda637870997b3a32a2d41e21bd46b6"
+    },
+    {
+      "bytes": 1387980,
+      "path": "figures/figure1-reference-governance-lineage.png",
+      "sha256": "dae15d3e3e8365a314e93152319cd5703ffa87f48eebbdfd572e3ec615df4858"
+    },
+    {
+      "bytes": 1159,
+      "path": "G0_PUBLIC_BOUNDARY_AUDIT.json",
+      "sha256": "27e02c6295672c59ce7dbf89ca9deed2a75a048be153176a7697908122cd4796"
+    },
+    {
+      "bytes": 2294,
+      "path": "GITHUB_RELEASE_CHECKLIST.md",
+      "sha256": "d1c7287fb91a6206295b019d43792dbe8e07d7fc3c0ed6ef5ca8ebba2c84e6a0"
+    },
+    {
+      "bytes": 1514,
+      "path": "LICENSE.md",
+      "sha256": "9c562da1eb71364010236d2f4b4d69280724ae99ceed1405e3b982b44b5b0364"
+    },
+    {
+      "bytes": 1893116,
+      "path": "paper/White\u8bed\u4e49\u767d\u76d2\u6cbb\u7406_v0.2.2.docx",
+      "sha256": "0b7a928419690a05e43ef51cad7bbb1ddfed41342b4b0c48e1185b491dcdfc6b"
+    },
+    {
+      "bytes": 708186,
+      "path": "paper/White\u8bed\u4e49\u767d\u76d2\u6cbb\u7406_v0.2.2.pdf",
+      "sha256": "a5dd29aa651b3108b75508c94edf6c8b7682b146a6e8e6acb9374604144a41cd"
+    },
+    {
+      "bytes": 1556,
+      "path": "PROTECTED_CAPABILITY_OVERVIEW.md",
+      "sha256": "6683fddacead38c63bc51ecc9e7e0c950bd44b1960e7a88988cfe22b1f037164"
+    },
+    {
+      "bytes": 541,
+      "path": "PUBLICATION_BOUNDARY.md",
+      "sha256": "7a7d7ca20cbaf30cf33debb050cbdbef8db72b80f65806bc953137b70710de4f"
+    },
+    {
+      "bytes": 1277,
+      "path": "PUBLICATION_READINESS.md",
+      "sha256": "1ea836a4c7eedeff908a7d39a7cb24078f327095bcb6909648124ef267e7a4ee"
+    },
+    {
+      "bytes": 458,
+      "path": "pyproject.toml",
+      "sha256": "25473e466cd785e6e68fbd964ecf56060591cc7efd8beec1314dbb6995ae4881"
+    },
+    {
+      "bytes": 4099,
+      "path": "README.md",
+      "sha256": "7bbed81e6615e588e7e3416c12e6d72126e910767fb705192b803fd18d5cab02"
+    },
+    {
+      "bytes": 1692,
+      "path": "REPRODUCIBILITY.md",
+      "sha256": "100dc18b4487f2c11246a5af81bd48f187a5f484d87cf77e906491cc5cc65b3d"
+    },
+    {
+      "bytes": 18935,
+      "path": "results/fixed_cases_v0.2.2.json",
+      "sha256": "234d3d6571c2088bd889c3c9a8a051385710d88e70292666ca5d7e5b512ebca1"
+    },
+    {
+      "bytes": 700,
+      "path": "results/reproduction_environment_v0.2.2.json",
+      "sha256": "0d8e4bde0235b29ec9ecc57bf9272d7af9de57fb887521f328b8ec8286b4a817"
+    },
+    {
+      "bytes": 1041,
+      "path": "results/semantic_ablation_v0.2.2.json",
+      "sha256": "964770a7f587f5bd01c58b8df732c7474b8f9b629a4622031bb1fef3d41f5a7d"
+    },
+    {
+      "bytes": 2573,
+      "path": "results/test_python313_v0.2.2.txt",
+      "sha256": "f2b7f689ee266f52c1f76413334c03667b8600ca8eda3dcb222ad6e08ef73fe8"
+    },
+    {
+      "bytes": 1805,
+      "path": "results/test_python39_v0.2.2.txt",
+      "sha256": "df235a8a34987917a905c8d3b293f2d992d5185eefc10b35d2a1e1146e4d1c9d"
+    },
+    {
+      "bytes": 415,
+      "path": "src/wbstg/__init__.py",
+      "sha256": "7fa5c6dcfebbfce79c6cb1a3e0ad1690c0bd9b67b67930ffc5e8981378ba04e9"
+    },
+    {
+      "bytes": 2971,
+      "path": "src/wbstg/ablation.py",
+      "sha256": "eb57d6aafd055e8964652140215242f902fed10ba9f87550e3c534a1c8eecf00"
+    },
+    {
+      "bytes": 1425,
+      "path": "src/wbstg/cli.py",
+      "sha256": "a93888f081ff5fd494e8b0e9d3b49f8b59ce86e49f1374f2548ac0479e35a75f"
+    },
+    {
+      "bytes": 8470,
+      "path": "src/wbstg/kernel.py",
+      "sha256": "a679f02a4dc0801196f721f5126320447aec23759527233432b9a6de6907c631"
+    },
+    {
+      "bytes": 2925,
+      "path": "src/wbstg/models.py",
+      "sha256": "bdcc42020ea93783ecc81a8a689662a2762e0c8263ebac22fcb0caef7b9dc7ef"
+    },
+    {
+      "bytes": 8112,
+      "path": "tests/test_whitebox_demo.py",
+      "sha256": "c66c590e0d47e9c499420df8bea80f86065cbda78351102a8eba7c4ac344a904"
+    },
+    {
+      "bytes": 7749,
+      "path": "tools/build_release_evidence.py",
+      "sha256": "b1827064c62c51e36f7de8cbad1d1e9920526646a4c86f58e86554be593ab943"
+    },
+    {
+      "bytes": 8502,
+      "path": "tools/prepare_public_paper.py",
+      "sha256": "ad5a02b91d5b04cdd1e7b3c2dfaf3d5268cbcc5a0917471ca33e36e20b1fca54"
+    },
+    {
+      "bytes": 3743,
+      "path": "tools/run_reference_cases.py",
+      "sha256": "a11220a7a341990bd3984bb531ee2a9ab53745d30f16c7afa2537d20de555a03"
+    },
+    {
+      "bytes": 1160,
+      "path": "tools/run_semantic_ablation.py",
+      "sha256": "f9ee902a88c757b85a6ad949703d7e6d72918d287f2954da97840a2bcb1910c8"
+    },
+    {
+      "bytes": 1399,
+      "path": "ZENODO_RELEASE_CHECKLIST.md",
+      "sha256": "603864a9eff1183de124899f6f2aed1317a94e928bc01e8a0039b09578764137"
+    }
+  ],
+  "hash_algorithm": "SHA-256",
+  "manifest_excludes": [
+    "RELEASE_MANIFEST.json",
+    "SHA256SUMS.txt"
+  ],
+  "release_name": "White Box State Transition Governance Reference Demo",
+  "release_version": "0.2.2",
+  "schema_version": "WBSTG-RELEASE-MANIFEST-1",
+  "scope": "candidate-first deterministic in-memory reference demonstration"
+}

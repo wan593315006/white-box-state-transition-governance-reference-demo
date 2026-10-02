@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this reference demonstration, please cite it using the metadata below."
+title: "White Box State Transition Governance Reference Demo"
+version: 0.2.2
+date-released: 2026-10-02
+authors:
+  - family-names: "万"
+    given-names: "根"
+    email: "593315006@qq.com"
+license: "Research and Noncommercial License v1.0"
+repository-code: "https://github.com/wan593315006/white-box-state-transition-governance-reference-demo"
+abstract: "A deterministic, in-memory reference demonstration of candidate-first, evidence-bound state-transition governance."
+keywords:
+  - state-transition governance
+  - evidence-bound decision
+  - lineage replay
+  - white-box reference demo
+preferred-citation:
+  type: article
+  title: "White Box State Transition Governance"
+  authors:
+    - family-names: "万"
+      given-names: "根"
+  version: 0.2.2
+  date-released: 2026-10-02
